@@ -25,6 +25,15 @@ body {
     color: #f0f8ff;
 }
 
+html {
+}
+
 h1 {
     text-align: center;
+}
+
+#background_img {
+    background-image: url("CCLLogo.jpeg");
+    background-repeat: no-repeat;
+    background-size: auto;
 }
