@@ -1,0 +1,16 @@
+.box {
+    color: var(--button-primary-fgColor-rest, #ffffff);
+    background-color: var(--button-primary-bgColor-rest, #238636);
+    border-color: var(--button-primary-borderColor-rest, rgba(240, 246, 252, 0.1));
+    box-shadow: var(--shadow-resting-small, 0 0 transparent),var(--shadow-highlight, 0 0 transparent);
+    text-decoration: none;
+    box-sizing: border-box;
+    margin-top: var(--base-size-16, 16px) !important;
+    margin-bottom: var(--base-size-16, 16px) !important;
+    border-style: solid;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-radius: var(--borderRadius-medium, 0.375rem);
+}
