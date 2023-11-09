@@ -1,0 +1,49 @@
+.Box-row:first-of-type {
+    border-top-color: transparent;
+}
+
+.Box-row:first-of-type {
+  border-top-left-radius: var(--borderRadius-medium, 0.375rem);
+  border-top-right-radius: var(--borderRadius-medium, 0.375rem);
+}
+
+.py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.form-checkbox {
+  padding-left: 20px;
+  margin: 15px 0;
+  vertical-align: middle;
+}
+.Box-row {
+    border-top: var(--borderWidth-thin, max(1px, 0.0625rem)) solid var(--borderColor-muted, #21262d);
+    list-style-type: none;
+    margin-top: calc(var(--borderWidth-thin, max(1px, 0.0625rem))*-1);
+    padding: var(--stack-padding-normal, 1rem);
+    border-bottom: var(--borderWidth-thin, max(1px, 0.0625rem)) solid var(--borderColor-muted, #201e26);
+}
+.Box {
+  background-color: var(--bgColor-default, #0d1117);
+  border-color: var(--borderColor-default, #30363d);
+  border-radius: var(--borderRadius-medium, 0.375rem);
+  border-style: solid;
+  border-width: var(--borderWidth-thin, max(1px, 0.0625rem));
+}
+
+.flash:not(.Banner) {
+  background-image: linear-gradient(var(--bgColor-accent-muted, var(--color-accent-subtle)), var(--bgColor-accent-muted, var(--color-accent-subtle)));
+  border-color: var(--borderColor-accent-muted, #30363d);
+  border-radius: var(--borderRadius-medium, 0.375rem);
+  border-style: solid;
+  border-width: var(--borderWidth-thin, max(1px, 0.0625rem));
+  color: var(--fgColor-default, var(--color-fg-default));
+  padding: var(--base-size-20, 1.25rem) var(--control-medium-paddingInline-spacious, 1rem);
+  position: relative;
+}
+
+.my-3 {
+  margin-top: var(--base-size-16, 16px) !important;
+  margin-bottom: var(--base-size-16, 16px) !important;
+}
