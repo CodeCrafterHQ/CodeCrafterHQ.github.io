@@ -13,10 +13,28 @@
     border-bottom-style: solid;
     border-left-style: solid;
     border-radius: var(--borderRadius-medium, 0.375rem);
+    opacity: 1;
 }
 
 .box:hover {
     background-color: #42a254;
+}
+
+.fakebox {
+    cursor: grab;
+}
+
+.fakebox:hover {
+    opacity: 0;
+    cursor: default;
+}
+
+.catchme {
+    opacity: 0
+}
+
+.catchme:hover {
+    opacity: 1
 }
 
 body {
