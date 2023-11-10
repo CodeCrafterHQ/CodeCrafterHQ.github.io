@@ -13,7 +13,6 @@
     border-bottom-style: solid;
     border-left-style: solid;
     border-radius: var(--borderRadius-medium, 0.375rem);
-    
 }
 
 .box:hover {
@@ -22,11 +21,25 @@
 
 body {
     color: #f0f8ff;
+    overflow-y: scroll;
 }
 
+#header {
+  color: white;
+  text-align: center; /* Centered text */
+  font-size: 90px; /* Big font size */
+  font-weight: bold;
+  position: fixed; /* Fixed position - sit on top of the page */
+  top: 0;
+  width: 100%; /* Full width */
+  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
+  z-index:100;
+  padding-bottom: 50px;
+}
 
-h1 {
-    text-align: center;
+#space {
+    padding-bottom: 5vw;
+    padding-top: 5vw
 }
 
 html { 
@@ -35,11 +48,14 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow-y: scroll;
+  background-attachment: fixed;
 }
-
+/*
 #background_img {
     background-image: url("CCLLogo.jpeg");
     background-repeat: no-repeat;
     background-size: 1000px;
     width: auto;	
 }
+*/
