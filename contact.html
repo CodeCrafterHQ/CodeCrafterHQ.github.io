@@ -1,74 +1,103 @@
 <!DOCTYPE html>
+
 <head>
-<title>CodeCrafter Homepage</title>
-<script>
-function thistab() {location.href = "https://youtube.com"}
-function newtab() {open("https://youtube.com")}
+    <title>CodeCrafter Homepage</title>
+    <script>
+        function thistab() {
+            location.href = "https://youtube.com"
+        }
 
-// When the user scrolls down 50px from the top of the document, resize the header's font size
-window.onscroll = function() {scrollFunction()};
+        function newtab() {
+            open("https://youtube.com")
+        }
 
-function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    document.getElementById("header").style.fontSize = "30px";
-  } else {
-    document.getElementById("header").style.fontSize = "90px";
-  }
-} 
+        // When the user scrolls down 50px from the top of the document, resize the header's font size
+        window.onscroll = function() {
+            scrollFunction()
+        };
 
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-} 
-</script>
-<link rel="icon" href="CCLogo.png">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="anotherstyle.css">
-<link rel="stylesheet" href="topnav.css">
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("header").style.fontSize = "30px";
+            } else {
+                document.getElementById("header").style.fontSize = "90px";
+            }
+        }
+
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <link rel="icon" href="CCLogo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anotherstyle.css">
+    <link rel="stylesheet" href="topnav.css">
 </head>
-<body>
- <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<div class="topnav" id="myTopnav">
-  <a href="/">Home</a>
-  <a href="/news">News</a>
-  <a href="/contact" class="active">Contact</a>
-  <a href="#about">About</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars">i am nice</i>
-  </a>
-</div>
-<h1 id="header">CodeCrafter</h1>
-<!--<a href="https://youtube.com/" class="box">Open Youtube in this Tab</a>
+<body>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <a href="/">Home</a>
+        <a href="/news">News</a>
+        <a href="/contact" class="active">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars">i am nice</i>
+        </a>
+    </div>
+    <h1 id="header">CodeCrafter</h1>
+    <!--<a href="https://youtube.com/" class="box">Open Youtube in this Tab</a>
 <a href="https://youtube.com/" target="_blank" class="box">Open Youtube in another Tab</a>
 <br />-->
 
 
-	<div id="space"></div>
-        <div class="Box">
+    <div id="space"></div>
+    <div class="Box">
         <form class="js-repo-features-form">
-        <section id="contact">
-        <div class="Box-row py-0"><div class="form-checkbox">
-	<h2>Contact</h2></div></div>
-        <div class="Box-row py-0"><div class="form-checkbox js-repo-option"><div class="flash my-3">Guten Tag <a href="https://youtube.com/" class="box">Open Youtube in this Tab</a></div></div></div>
-        <div class="Box-row py-0"><div class="form-checkbox">Hi <a onclick="javascript: window.open('https://youtube.com/', description);" class="box fakebox" target="_blank">Open Youtube in another Tab</a></div></div>
-        <div class="Box-row py-0" style="height: 100%"><div class="form-checkbox"></div></div>
-        </section>
-        <section id="about">
-        <div class="Box-row py-0"><div class="form-checkbox">
-	<h2>About us</h2></div>
-	<div class="flash my-3">
-        <div class="Box-row py-0"><div class="form-checkbox js-repo-option"><h3>We're CodeCrafter</h3></div></div>
-        <div class="Box-row py-0"><div class="form-checkbox">A small group of crazy people, thinking they could actually code. Do you feel like this is just you? Perfect! 'Cause that means, we have a new member, doesn't it?<div class="flash my-3" style="text-align: center">Hint: if you wanna join us, send us a mail! <a href="mailto:codecrafter@gmx.net?subject=Want%20to%20join%20CodeCrafter&body=Hello,%20my%20name%20is%20</>%0Aand%20I%20wanna%20join%20you%20cause%20I%20am%20very%20interested%20in%20</>.%0A%0AAlso,%20I%20think%20I%20am%20good%20at%20</>%20and%20therefore%20possibly%20helpful.%0A%0AI%20look%20forward%20to%20receiving%20an%20answer%20soon.%0A%0AYours%20sincerely,%0A</>" class="box">Join us now</a></div></div></div>
-        </div>
-        </div>
-        </section>
+            <section id="contact">
+                <div class="Box-row py-0">
+                    <div class="form-checkbox">
+                        <h2>Contact</h2>
+                    </div>
+                </div>
+                <div class="Box-row py-0">
+                    <div class="form-checkbox js-repo-option">
+                        <div class="flash my-3">Guten Tag <a href="https://youtube.com/" class="box">Open Youtube in this Tab</a></div>
+                    </div>
+                </div>
+                <div class="Box-row py-0">
+                    <div class="form-checkbox">Hi <a onclick="javascript: window.open('https://youtube.com/', description);" class="box fakebox" target="_blank">Open Youtube in another Tab</a></div>
+                </div>
+                <div class="Box-row py-0" style="height: 100%">
+                    <div class="form-checkbox"></div>
+                </div>
+            </section>
+            <section id="about">
+                <div class="Box-row py-0">
+                    <div class="form-checkbox">
+                        <h2>About us</h2>
+                    </div>
+                    <div class="flash my-3">
+                        <div class="Box-row py-0">
+                            <div class="form-checkbox js-repo-option">
+                                <h3>We're CodeCrafter</h3>
+                            </div>
+                        </div>
+                        <div class="Box-row py-0">
+                            <div class="form-checkbox">A small group of crazy people, thinking they could actually code. Do you feel like this is just you? Perfect! 'Cause that means, we have a new member, doesn't it?<div class="flash my-3" style="text-align: center">Hint: if you wanna join us, send us a mail! <a href="mailto:codecrafter@gmx.net?subject=Want%20to%20join%20CodeCrafter&body=Hello,%20my%20name%20is%20</>%0Aand%20I%20wanna%20join%20you%20cause%20I%20am%20very%20interested%20in%20</>.%0A%0AAlso,%20I%20think%20I%20am%20good%20at%20</>%20and%20therefore%20possibly%20helpful.%0A%0AI%20look%20forward%20to%20receiving%20an%20answer%20soon.%0A%0AYours%20sincerely,%0A</>" class="box">Join us now</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </form>
-        </div>
+    </div>
 </body>
