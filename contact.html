@@ -48,7 +48,7 @@
         <a href="/">Home</a>
         <a href="/news">News</a>
         <a href="/contact" class="active">Contact</a>
-        <a href="#about">About</a>
+        <a href="#about" id="aboutid">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars">i am nice</i>
         </a>
@@ -70,15 +70,15 @@
                 </div>
                 <div class="Box-row py-0">
                     <div class="form-checkbox js-repo-option">
-                        <div class="flash my-3">Guten Tag <a href="https://youtube.com/" class="box">Open Youtube in this Tab</a></div>
+                        <div class="flash my-3">E-MAIL: <a href="mailto:codecrafter@gmx.net" class="box">codecrafter@gmx.net</a></div>
                     </div>
                 </div>
-                <div class="Box-row py-0">
-                    <div class="form-checkbox">Hi <a onclick="javascript: window.open('https://youtube.com/', description);" class="box fakebox" target="_blank">Open Youtube in another Tab</a></div>
+<!--                <div class="Box-row py-0">
+                    <div class="form-checkbox">Do you wanna have <a onclick="javascript: window.open('https://example.com/', '_blank');" class="box fakebox" target="_blank">100 Bitcoin</a>?</div>
                 </div>
                 <div class="Box-row py-0" style="height: 100%">
                     <div class="form-checkbox"></div>
-                </div>
+                </div>-->
             </section>
             <section id="about">
                 <div class="Box-row py-0">
@@ -92,7 +92,7 @@
                             </div>
                         </div>
                         <div class="Box-row py-0">
-                            <div class="form-checkbox">A small group of crazy people, thinking they could actually code. Do you feel like this is just you? Perfect! 'Cause that means, we have a new member, doesn't it?<div class="flash my-3" style="text-align: center">Hint: if you wanna join us, send us a mail! <a href="mailto:codecrafter@gmx.net?subject=Want%20to%20join%20CodeCrafter&body=Hello,%20my%20name%20is%20</>%0Aand%20I%20wanna%20join%20you%20cause%20I%20am%20very%20interested%20in%20</>.%0A%0AAlso,%20I%20think%20I%20am%20good%20at%20</>%20and%20therefore%20possibly%20helpful.%0A%0AI%20look%20forward%20to%20receiving%20an%20answer%20soon.%0A%0AYours%20sincerely,%0A</>" class="box">Join us now</a></div>
+                            <div class="form-checkbox">A small group of crazy people, thinking they could actually code. Do you feel like this is just you? Perfect! 'Cause that means, we have a new member, doesn't it? Hello Hello Hello<div class="flash my-3" style="text-align: right; display: inline-block; margin-left: auto; margin-right: 0px; width: fit-content; margin-left: 2vw;">Hint: if you wanna join us, send us a mail! <a href="mailto:codecrafter@gmx.net?subject=Want%20to%20join%20CodeCrafter&body=Hello,%20my%20name%20is%20</>%0Aand%20I%20wanna%20join%20you%20cause%20I%20am%20very%20interested%20in%20</>.%0A%0AAlso,%20I%20think%20I%20am%20good%20at%20</>%20and%20therefore%20possibly%20helpful.%0A%0AI%20look%20forward%20to%20receiving%20an%20answer%20soon.%0A%0AYours%20sincerely,%0A</>" class="box">Join us now</a></div>
                             </div>
                         </div>
                     </div>
@@ -100,4 +100,8 @@
             </section>
         </form>
     </div>
+    <script>
+        var about = document.getElementById("aboutid")
+        about.addEventListener("click", function() {document.title = "About - CodeCrafter Homepage"});
+    </script>
 </body>
