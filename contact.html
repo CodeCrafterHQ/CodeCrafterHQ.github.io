@@ -23,14 +23,16 @@
                 document.getElementById("header").style.fontSize = "90px";
             }
         }
-
         /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
         function myFunction() {
             var x = document.getElementById("myTopnav");
+            var h = document.getElementById("header");
             if (x.className === "topnav") {
                 x.className += " responsive";
+                h.className = "moretop";
             } else {
                 x.className = "topnav";
+                h.className = "lesstop";
             }
         }
     </script>
@@ -47,19 +49,19 @@
     <div class="topnav" id="myTopnav">
         <a href="/">Home</a>
         <a href="/news">News</a>
-        <a href="/contact" class="active">Contact</a>
+        <a href="/contact" class="active" id="cont">Contact</a>
         <a href="#about" id="aboutid">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <h1 id="header">CodeCrafter</h1>
+    <h1 id="header" class="lesstop">CodeCrafter</h1>
     <!--<a href="https://youtube.com/" class="box">Open Youtube in this Tab</a>
 <a href="https://youtube.com/" target="_blank" class="box">Open Youtube in another Tab</a>
 <br />-->
 
 
-    <div id="space"></div>
+
     <div class="Box">
         <form class="js-repo-features-form">
             <section id="contact">
@@ -70,7 +72,7 @@
                 </div>
                 <div class="Box-row py-0">
                     <div class="form-checkbox js-repo-option">
-                        <div class="flash my-3">E-MAIL: <a href="mailto:codecrafter@gmx.net" class="box">codecrafter@gmx.net</a></div>
+                        <div class="flash my-3">E-MAIL: <a href="mailto:codecrafter@gmx.net" target="_blank" class="box">codecrafter@gmx.net</a></div>
                     </div>
                 </div>
 <!--                <div class="Box-row py-0">
@@ -102,6 +104,12 @@
     </div>
     <script>
         var about = document.getElementById("aboutid")
-        about.addEventListener("click", function() {document.title = "About - CodeCrafter Homepage"});
+        about.addEventListener("click", function() {
+            document.title = "About - CodeCrafter Homepage";
+            console.log(document.getElementById("cont"));
+            document.getElementById("cont").className = "";
+            console.log(about);
+            about.className = "active";
+        });
     </script>
 </body>
