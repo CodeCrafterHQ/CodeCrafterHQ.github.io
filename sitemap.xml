@@ -17,6 +17,15 @@
   <lastmod>2023-11-21T12:04:18+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+      <loc>https://codecrafterhq.github.io/dc</loc>
+      <lastmod>2023-11-21T12:04:18+00:00</lastmod>
+      <priority>0.60</priority>
+</url>
+      <url>
+      <loc>https://codecrafterhq.github.io/discord</loc>
+      <lastmod>2023-11-21T12:04:18+00:00</lastmod>
+      <priority>0.30</priority>
+</url>
 
 </urlset>
