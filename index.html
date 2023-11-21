@@ -79,4 +79,12 @@ function myFunction() {
         <div class="Box-row py-0"><div class="form-checkbox">Hallo</div></div>
         </form>
         </div>
+    <script>
+        var about = document.getElementById("aboutid")
+        about.addEventListener("click", function() {
+            document.title = "About - CodeCrafter Homepage";
+            document.getElementById("cont").className = "";
+            about.className = "active";
+        });
+    </script>
 </body>
