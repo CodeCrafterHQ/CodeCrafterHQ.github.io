@@ -46,7 +46,7 @@ body {
 #header {
   color: white;
   text-align: center; /* Centered text */
-  font-size: 90px; /* Big font size */
+  font-size: 6vw; /* Big font size */
   font-weight: bold;
   position: relative; /* Fixed position - sit on top of the page */
 /*  top: 0; */
