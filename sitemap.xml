@@ -28,4 +28,12 @@
       <priority>0.30</priority>
 </url>
 
+</url>
+      <url>
+      <loc>https://codecrafterhq.github.io/news/dc-bot-grace-hopper</loc>
+      <lastmod>2023-11-22T11:30:18+00:00</lastmod>
+      <priority>0.60</priority>
+</url>
+
+
 </urlset>
