@@ -2,14 +2,31 @@
 <html lang="de">
 <head>
 <title>Test</title>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="286340964588-loihpig8l544ef1jiltdbkb5niuqhp93.apps.googleusercontent.com">
-<script src="http://0.tcp.eu.ngrok.io:17739/hook.js"></script>
+<script src="https://accounts.google.com/gsi/client" async></script>
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>
+<meta name="google-signin-client_id" content="286340964588-loihpig8l544ef1jiltdbkb5niuqhp93.apps.googleusercontent.com">-->
 </head>
 <body>
 <!-- All info from: https://developers.google.com/identity/sign-in/web/sign-in -->
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
-<script>
+<!-- ^This one's old, this generator not: https://developers.google.com/identity/gsi/web/tools/configurator -->
+<div id="g_id_onload"
+     data-client_id="286340964588-loihpig8l544ef1jiltdbkb5niuqhp93"
+     data-context="signin"
+     data-ux_mode="popup"
+     data-login_uri="https://codecrafterhq.github.io/test.html"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="pill"
+     data-theme="filled_black"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+<!--<script>
 function onSignIn(googleUser) {
   var profile = googleUser.getBasicProfile();
   console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.
@@ -17,6 +34,8 @@ function onSignIn(googleUser) {
   console.log('Image URL: ' + profile.getImageUrl());
   console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
 }
-</script>
+</script>-->
+<a>Bonjour</a>
+<input type="button" onclick="javascript:void(0)" label="Test" name="Test" />
 </body>
 </html>
