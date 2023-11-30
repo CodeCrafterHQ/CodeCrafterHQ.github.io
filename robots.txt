@@ -33,8 +33,10 @@ User-agent: yahoo-blogs/v3.9
 Disallow: 
 User-agent: *
 Disallow: 
+User-Agent: Twitterbot
+Disallow: 
 User-agent: GPTBot
 Disallow: /
 User-agent: ChatGPT-User
-Disallow:
+Disallow: 
 Sitemap: https://codecrafterhq.github.io/sitemap.xml
