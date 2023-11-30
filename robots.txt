@@ -35,4 +35,6 @@ User-agent: *
 Disallow: 
 User-agent: GPTBot
 Disallow: /
+User-agent: ChatGPT-User
+Disallow:
 Sitemap: https://codecrafterhq.github.io/sitemap.xml
